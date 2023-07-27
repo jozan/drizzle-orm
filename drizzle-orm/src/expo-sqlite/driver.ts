@@ -11,6 +11,12 @@ import { type DrizzleConfig } from "~/utils";
 // TODO: use ExpoSQLiteSession
 import { SQLiteD1Session } from "./session";
 
+// TODO: this is pending improvements on the expo-sqlite bindings
+//       it's missing prepared statements all together so there is
+//       no much point having expo support as it would be slow by default
+//       and no much can be done. however, expo team has expressed their
+//       interest in improving the bindings so we'll wait for that.
+
 import type * as ExpoSQLite from "expo-sqlite";
 
 export type DrizzleExpoSQLiteDatabase<
